@@ -54,7 +54,7 @@
                     </execution>
                     <execution>
                         <id>check-123</id>
-                        <phase>verify</phase>
+<!--                        <phase>verify</phase>-->
                         <goals>
                             <goal>check</goal>
                         </goals>
