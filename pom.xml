@@ -46,6 +46,13 @@
                         </goals>
                     </execution>
                     <execution>
+                        <id>report-123</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
                         <id>check-123</id>
                         <phase>verify</phase>
                         <goals>
@@ -56,6 +63,10 @@
                 <configuration>
                     <rules>
                         <rule>
+                            <element>CLASS</element>
+                            <excludes>
+                                <exclude>*Test</exclude>
+                            </excludes>
                             <limits>
                                 <limit>
                                     <counter>LINE</counter>
